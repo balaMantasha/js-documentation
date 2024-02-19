@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    line-height: 30px;
+    display: flex;
+    align-items: start;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#main-doc {
+    padding: 30px;
+    /* border: 2px solid red; */
+}
+
+header {
+    font-size: 20px;
+    font-weight: bold;
+    /* border:1px solid red; */
+}
+
+code {
+    background-color: rgb(212, 211, 211);
+    display: block;
+    /* height: 35px; */
+    padding: 10px 0px 10px 70px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+}
+
+p {
+    margin-top: 40px;
+}
+
+#navbar a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid black;
+    color: rgb(90, 84, 84);
+    padding: 7px 7px 8px 40px;
+    font-size: large;
+    font-weight: 500;
+
+}
+
+p,
+li {
+    color: rgb(102, 100, 100);
+}
+
+#navbar {
+    /* border:1px solid red; */
+    border-right: 4px Solid rgb(129, 121, 121);
+    overflow-y: auto;
+    width: 75%;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    /* background-color: pink; */
+}
+
+#navbar header {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 7px 7px 7px 40px;
+    border-bottom: 1px solid rgb(119, 113, 113);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+@media (width < 1200px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        width: 100%;
+        position: static;
+        height: 300px;
+    }
+
+    #navbar header {
+        text-align: center;
+    }
+
+
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(136, 126, 126);
+    border-radius: 10px;
+}
